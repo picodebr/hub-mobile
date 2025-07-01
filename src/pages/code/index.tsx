@@ -18,7 +18,7 @@ import {LoadingScreen} from '../../components/LoadingScreen';
 import {appError, appLog} from '../../util/appLog';
 
 const timeConstants = {
-  bootloaderStartup: 250,
+  bootloaderStartup: 500,
   waitWebviewLoad: 1000,
   uploadedMessageDelay: 2000,
   compilingErrorMessageDelay: 2000,
