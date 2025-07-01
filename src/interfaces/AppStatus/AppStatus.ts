@@ -14,6 +14,7 @@ export const appStatus = <const>[
   /* upload */
   'ready_to_upload', // desktop app only
   'uploading',
+  'wait_reset_click',
   'uploaded',
   'upload_failed',
 ];

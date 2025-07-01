@@ -78,7 +78,7 @@ export const Code: React.FC = () => {
         if (serialStatus !== 'connected' || appStatus !== 'compiled' || !code)
           return;
 
-        setAppStatus('uploading');
+        //setAppStatus('wait_reset_click');
         await uploadCode(code);
 
         setAppStatus('uploaded');
@@ -87,7 +87,8 @@ export const Code: React.FC = () => {
         setAppStatus('upload_failed');
       }
     };
-
+    
+    setAppStatus('wait_reset_click');
     talkToBootloader();
   }, [serialStatus, code, appStatus, uploadCode]);
 
