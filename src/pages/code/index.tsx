@@ -3,7 +3,6 @@
 
 import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import NetInfo from '@react-native-community/netinfo';
-import Orientation from 'react-native-orientation';
 import {APP_FRONTEND_URL} from '@env';
 import WebView, {WebViewMessageEvent} from 'react-native-webview';
 import {useNavigate} from 'react-router-native';
@@ -42,10 +41,6 @@ export const Code: React.FC = () => {
       mounted.current = false;
     };
   }, []);
-
-  useEffect(() => {
-    isLandscape ? Orientation.lockToLandscape() : Orientation.lockToPortrait();
-  }, [isLandscape]);
 
   useEffect(() => {
     serial.startUsbService();
