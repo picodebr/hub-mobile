@@ -211,6 +211,8 @@ dependencies {
 
     implementation project(':react-native-serialport')
 
+    implementation files("../../node_modules/react-native-serialport/android/libs/usbserial-6.0.5-release.aar")
+
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
     }

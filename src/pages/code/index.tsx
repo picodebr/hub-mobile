@@ -15,6 +15,7 @@ import {ICompiledCode} from '../../interfaces/Code/Code';
 import {AppStatus} from '../../interfaces/AppStatus/AppStatus';
 import {LoadingScreen} from '../../components/LoadingScreen';
 import {appError, appLog} from '../../util/appLog';
+import Orientation from 'react-native-orientation-locker';
 
 const timeConstants = {
   bootloaderStartup: 500,
@@ -32,6 +33,10 @@ export const Code: React.FC = () => {
   const webviewRef = useRef<WebView>(null);
   const mounted = useRef(false);
   const navigate = useNavigate();
+
+  // useEffect(() => {
+  //   isLandscape ? Orientation.lockToLandscape() : Orientation.lockToPortrait();
+  // }, [isLandscape]);
 
   useEffect(() => {
     mounted.current = true;
@@ -95,11 +100,13 @@ export const Code: React.FC = () => {
         if (typeof data !== 'object') return;
 
         if (data.orientation) {
-          setIsLandscape(data.orientation === 'landscape');
+          setIsLandscape(true);
           return;
         }
 
         if (data.build_data) {
+          setIsLandscape(true);
+
           await serial.reconnect();
           await delay(timeConstants.bootloaderStartup);
 

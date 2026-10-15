@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "HUB-PiCode.app"
-               BlueprintName = "HUB-PiCode"
-               ReferencedContainer = "container:HUB-PiCode.xcodeproj">
+               BuildableName = "PiCode-Hub.app"
+               BlueprintName = "PiCode-Hub"
+               ReferencedContainer = "container:PiCode-Hub.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
                BuildableName = "CodeTests.xctest"
                BlueprintName = "CodeTests"
-               ReferencedContainer = "container:HUB-PiCode.xcodeproj">
+               ReferencedContainer = "container:PiCode-Hub.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "HUB-PiCode.app"
-            BlueprintName = "HUB-PiCode"
-            ReferencedContainer = "container:HUB-PiCode.xcodeproj">
+            BuildableName = "PiCode-Hub.app"
+            BlueprintName = "PiCode-Hub"
+            ReferencedContainer = "container:PiCode-Hub.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "HUB-PiCode.app"
-            BlueprintName = "HUB-PiCode"
-            ReferencedContainer = "container:HUB-PiCode.xcodeproj">
+            BuildableName = "PiCode-Hub.app"
+            BlueprintName = "PiCode-Hub"
+            ReferencedContainer = "container:PiCode-Hub.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -13,3 +13,15 @@ Run `npm run start` or `yarn start` to start the development server (metro bundl
 # Build
 
 Run `npm run android` or `run android` to build the entire project and load it into a physical device.
+
+
+
+react-native-serialport 
+dependencies {
+    compileOnly fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+}
+
+export NODE_OPTIONS=--openssl-legacy-provider
+
+    "build-apk": "./gradlew assembleRelease",
+    "build-clean": "./gradlew clean",
